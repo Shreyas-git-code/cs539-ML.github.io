@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>CS 539 Project</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script src="https://kit.fontawesome.com/0da8ea5e19.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<span class="logo"><img src="images/logo.svg" alt="" /></span>
+			<h1>Vehicle Insurance</h1>
+			<h2>Fraud Claim Detection<h2>
+		</header>
+		<p style="text-align: center;">built by,<br />
+			Shreyas Chigurupati<br />
+			Snehith Varma Datla<br />
+			Sree Likhith Desari
+		</p>
+
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#intro" class="active">Introduction</a></li>
+				<li><a href="#first">Work flow</a></li>
+				<li><a href="#second">Grid search CV</a></li>
+				<li><a href="#third">Models</a></li>
+				<li><a href="#fourth">Summary</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<section id="intro" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2><a href="#">Fraud Detection</a></h2>
+						</header>
+						<p>In the domain of insurance, one significant challenge revolves around
+							detecting fraudulent
+							vehicle insurance claims. The problem requires the development of a classification model
+							that can effectively distinguish between legitimate and deceptive claims. By leveraging
+							advanced machine learning algorithms, this critical task aims to minimize financial losses
+							for insurers and maintain the integrity of the insurance industry. With accurate claim
+							detection, insurers can promptly identify suspicious patterns and take appropriate measures
+							to combat fraud, ensuring fair and reliable coverage for all policyholders.</p>
+						<!-- <ul class="actions">
+							<li><a href="generic.html" class="button">View code</a></li>
+						</ul> -->
+					</div>
+					<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+				</div>
+			</section>
+
+			<!-- Work Flow -->
+			<section id="first" class="main special">
+				<header class="major">
+					<h2>Work Flow</h2>
+					<p>A classification problem involves preparing the data, training a model on a
+						labeled dataset, evaluating its performance, and deploying it to make predictions on new, unseen
+						instances.</p>
+				</header>
+				<ul class="statistics">
+					<li class="style1">
+						<span class="icon solid fa-arrow-right"></span>
+						<strong>1</strong> Retrival
+					</li>
+					<li class="style2">
+						<span class="icon fa-arrow-right"></span>
+						<strong>2</strong> Cleaning and preprocessing
+					</li>
+					<li class="style3">
+						<span class="icon solid fa-arrow-right"></span>
+						<strong>3</strong> Training
+					</li>
+					<li class="style4">
+						<span class="icon solid fa-arrow-right"></span>
+						<strong>4</strong> Prediction
+					</li>
+					<li class="style5">
+						<span class="icon fa-arrow-right"></span>
+						<strong>5</strong> Accuracy
+					</li>
+				</ul>
+				<p class="content">The process of solving a classification problem involves several steps. First, the
+					data is collected and prepared, ensuring it is in a suitable format. Then, the dataset is divided
+					into a training set and a test set. A suitable classification algorithm is selected, and the model
+					is trained on the training set, adjusting its parameters to minimize prediction errors. The model's
+					performance is evaluated using metrics like accuracy or F1 score on the test set. If the performance
+					is satisfactory, the model is deployed to make predictions on new data. Regular monitoring and
+					reevaluation are necessary to maintain the model's effectiveness.</p>
+				<!-- <footer class="major">
+					<ul class="actions special">
+						<li><a href="generic.html" class="button">Learn More</a></li>
+					</ul>
+				</footer> -->
+			</section>
+
+			<!-- Grid search CV -->
+			<section id="second" class="main special">
+				<header class="major">
+					<h2>Grid search CV</h2>
+					<p class="content">In our project, we leverage the power of Grid Search Cross-Validation (CV) to
+						fine-tune our
+						machine learning models and optimize their performance. Grid Search CV is a technique that helps
+						us systematically search for the best combination of hyperparameters for our models, ensuring
+						they deliver the best results.</p>
+				</header>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="grid_search.html" class="button primary">Learn more</a></li>
+						<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+					</ul>
+				</footer>
+			</section>
+
+
+
+			<!-- Models -->
+			<section id="third" class="main special">
+				<header class="major">
+					<h2>Models</h2>
+				</header>
+				<ul class="features">
+					<li>
+						<span class="icon solid major style1 fa-chevron-right"></span>
+						<h3><a href="model_1.html">Ada Boost</a></h3>
+						<p>AdaBoost is an ensemble learning method that combines weak learners iteratively to create a
+							strong classifier, giving more importance to misclassified instances for improved accuracy.
+						</p>
+					</li>
+					<li>
+						<span class="icon major style3 fa-tree"></span>
+						<h3><a href="model_2.html">Random Forest</a></h3>
+						<p>Random Forest is an ensemble learning method that uses multiple decision trees for improved
+							accuracy and robustness against overfitting.</p>
+					</li>
+					<li>
+						<span class="icon major style6 fa-gem"></span>
+						<h3><a href="model_3.html">Gradient Boosting</a></h3>
+						<p>Gradient Boosting is an ensemble learning method that builds multiple decision trees
+							sequentially, with each tree correcting the errors of its predecessor using gradients,
+							resulting in a powerful model with enhanced predictive capabilities.</p>
+					</li>
+					<li>
+						<span class="icon major style5 fa-folder"></span>
+						<h3><a href="model_4.html">LightGBM</a></h3>
+						<p>LightGBM is a fast and efficient gradient boosting framework that utilizes a tree-based
+							learning approach to achieve high accuracy on large-scale datasets and is particularly
+							well-suited for dealing with high-dimensional data.</p>
+					</li>
+					<li>
+						<span class="icon major style8 fa-code-branch"></span>
+						<h3><a href="model_5.html">XGBoost</a></h3>
+						<p>XGBoost is an optimized gradient boosting algorithm that excels in handling complex data and
+							achieving state-of-the-art performance in various machine learning tasks.</p>
+					</li>
+					<li>
+						<span class="icon major style7 fa-chart-bar"></span>
+						<h3><a href="model_6.html">Logistic Regression</a></h3>
+						<p>Logistic Regression is a simple and widely used classification algorithm that models the
+							probability of binary outcomes based on input features.</p>
+					</li>
+				</ul>
+				<!-- <footer class="major">
+					<ul class="actions special">
+						<li><a href="generic.html" class="button">Learn More</a></li>
+					</ul>
+				</footer> -->
+			</section>
+
+			<!-- Summary -->
+			<section id="fourth" class="main special">
+				<header class="major">
+					<h2>Summary</h2>
+					<p>After thorough evaluation and comparison, we can confidently state that the <strong>Gradient
+							Boosting</strong>
+						model is the best choice for detecting fraudulent claims in this project. Its superior
+						performance and robustness in handling imbalanced datasets make it a valuable asset for fraud
+						prevention, providing a dependable and accurate solution to safeguard against fraudulent
+						activities in insurance claims and similar scenarios.</p>
+				</header>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="#" class="button primary">View code</a></li>
+						<!-- <li><a href="generic.html" class="button">Learn More</a></li> -->
+					</ul>
+				</footer>
+			</section>
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>More Information</h2>
+				<p>For documentation and code, please visit our <a href="#">GitHub repository.</a> Happy exploring!</p>
+				<!-- <ul class="actions">
+					<li><a href="generic.html" class="button">Learn More</a></li>
+				</ul> -->
+			</section>
+			<ul class="icons">
+				<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
+				<!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li> -->
+				<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
+			</ul>
+
+			<section>
+				<!-- <h2>Etiam feugiat</h2> -->
+				<dl class="alt">
+					<!-- <dt>Address</dt>
+					<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+					<dt>Phone</dt>
+					<dd>(000) 000-0000 x 0000</dd> -->
+					<dt>Email</dt>
+					<dd><a href="#">chigurupatishreyas@gmail.com</a></dd>
+				</dl>
+
+			</section>
+			<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

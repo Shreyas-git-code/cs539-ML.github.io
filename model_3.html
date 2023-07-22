@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Gradient boosting Description</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1>Gradient Boosting</h1>
+            <!-- <p>Ipsum dolor sit amet nullam</p> -->
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Content -->
+            <section id="content" class="main">
+                <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
+                <h2>Gradient Boosting algorithm</h2>
+                <p>Gradient Boosting is a powerful machine learning technique that builds an ensemble of decision trees
+                    in a sequential manner. It focuses on minimizing the errors made by the previous trees in the
+                    ensemble by iteratively adding new trees. Each new tree is trained to correct the mistakes or
+                    residuals of the previous trees. The algorithm assigns weights to each data point based on the
+                    errors made by the previous trees, giving more weight to misclassified or poorly predicted
+                    instances. By combining the predictions of multiple trees, each one making up for the weaknesses of
+                    its predecessors, gradient boosting creates a strong predictive model. Gradient boosting is known
+                    for its ability to handle various types of data, handle both regression and classification problems,
+                    and deliver highly accurate results. Additionally, it offers flexibility through customizable loss
+                    functions and parameter tuning, allowing users to fine-tune the algorithm to their specific needs.
+                </p>
+
+                <h2>Our Implementation</h2>
+                <p>The process begins by defining the basic GBM model using the GradientBoostingClassifier from
+                    scikit-learn, with a specified random state for reproducibility. Subsequently, a parameter grid is
+                    set up, comprising different values for the number of estimators, learning rate, and maximum depth
+                    of the trees in the ensemble.</p>
+
+                <p>To optimize the GBM's performance, the code utilizes GridSearchCV, a powerful tool that performs an
+                    exhaustive search over the parameter grid. The GridSearchCV object is initialized with the GBM
+                    model, the parameter grid, and the F1 score as the evaluation metric, which is well-suited for
+                    imbalanced datasets. The cross-validation with 10 folds (cv=10) ensures robust parameter selection.
+                    By fitting the GridSearchCV object to the training data ('X_train_ds' and 'y_train_ds'), the process
+                    identifies the best combination of hyperparameters that maximize the F1 score.
+                </p>
+
+                <p>Upon obtaining the best parameters, a new GBM model ('gbm_best') is initialized using these optimized
+                    values and then trained on the balanced training dataset. The resulting model is expected to deliver
+                    enhanced fraud detection capabilities, thanks to the hyperparameter tuning process</p>
+                <h2><strong>Confusion matrix:</strong></h2>
+                <div class="image-container-center">
+                    <img src="images/cm_gb.jpeg" width="300" height="300">
+                </div>
+                <!-- <ul class="actions">
+                    <li><a href="#" class="button">View code</a></li>
+                </ul> -->
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Documentation</h2>
+                <p>To learn more about the algorithm, visit the official <a
+                        href="https://scikit-learn.org/stable/index.html">Scikit-learn</a> website or click the button
+                    below.</p>
+                <ul class="actions">
+                    <li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html"
+                            class="button">Learn More</a></li>
+                </ul>
+            </section>
+            <!-- <section>
+                <h2>Etiam feugiat</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>(000) 000-0000 x 0000</dd>
+                    <dt>Email</dt>
+                    <dd><a href="#">information@untitled.tld</a></dd>
+                </dl>
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+                </ul>
+            </section>
+            <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
