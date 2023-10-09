@@ -1,5 +1,5 @@
 # Project Title
-## Vehicle Insurance Fraud Claim Detection
+Vehicle Insurance Fraud Claim Detection
 
 # Description
 This project aims to predict fraudulent insurance claims based on various features related to the claim and the claimant. The project uses several machine learning models including Random Forest, LightGBM, Gradient Boosting, MLP, Logistic Regression, XGBoost, Decision Tree, Gaussian Naive Bayes, and AdaBoost. Each model is trained, hyperparameter-tuned, and evaluated using metrics such as accuracy, precision, recall, F1-score, and AUC-ROC.
